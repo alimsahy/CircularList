@@ -16,6 +16,17 @@ namespace CircularList
                 return m_circularListArr[index];
             }
         }
+        
+        /// <summary>
+        ///     Gets element count
+        /// </summary>
+        public int Count
+        {
+            get
+            {
+                return m_circularListArr.Length;
+            }
+        }
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:CircularList.CircularList"/> class.
@@ -120,21 +131,6 @@ namespace CircularList
         public ArrayIndexInfo Max()
         {
             return GetMaximumValueWithIndex();
-        }
-
-        public void Print()
-        {
-            Console.WriteLine("");
-            for (int i = 0; i < m_circularListArr.Length; i++)
-            {
-                Console.WriteLine("circularList[{0}] = {1}", i, this[i]);
-            }
-            Console.WriteLine("Summary: {0}", Sum());
-            Console.WriteLine("Average: {0}", Avg());
-            Console.WriteLine("Maximum: {0}", Max().Value);
-            Console.WriteLine("Minimum: {0}", Min().Value);
-            Console.WriteLine("Previous element before minimum: {0}", GetPrevious(Min()).Value);
-            Console.WriteLine("");
         }
 
         /// <summary>
