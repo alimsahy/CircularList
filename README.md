@@ -15,6 +15,8 @@ myList.Insert(10); // Index: 3
 
 myList.RemoveAt(2); // Removes 12
 
+int value = myList[2]; // Gets 10
+
 int beforeMinimumValue = myList.GetPrevious(myList.Min()).Value;
 int beforeMinimumIndex = myList.GetPrevious(myList.Min()).Index;
 
