@@ -1,7 +1,7 @@
 # CircularList
 Simple circular list implementation using C#
 
-[alt text](https://static.javatpoint.com/ds/images/circular-singly-linked-list.png)
+(https://static.javatpoint.com/ds/images/circular-singly-linked-list.png)
 
 # Usage
 
